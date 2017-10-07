@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ezmed.ezmed.RegistrarActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/registrarNomeCompleto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="Nome Completo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/registrarTxtUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/registrarNomeCompleto"
+            android:layout_below="@+id/registrarNomeCompleto"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="Usuario"
+            android:inputType="textPersonName"
+            android:singleLine="false" />
+
+        <EditText
+            android:id="@+id/registrarTxtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/registrarTxtUsuario"
+            android:layout_below="@+id/registrarTxtUsuario"
+            android:layout_marginTop="37dp"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/registrarTxtSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/registrarTxtEmail"
+            android:layout_below="@+id/registrarTxtEmail"
+            android:layout_marginTop="37dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:id="@+id/registrarTxtCelular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/registrarTxtSenha"
+            android:layout_below="@+id/registrarTxtSenha"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:hint="Numero de Celular"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/registrarTxtLimpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/registrarTxtVoltar"
+            android:layout_alignBottom="@+id/registrarTxtVoltar"
+            android:layout_toEndOf="@+id/registrarTxtCelular"
+            android:autoLink="web"
+            android:onClick="clickLimpar"
+            android:text="Limpar"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <TextView
+            android:id="@+id/registrarTxtVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/registrarTxtCelular"
+            android:autoLink="web"
+            android:onClick="clickVoltar"
+            android:text="Voltar"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <Button
+            android:id="@+id/registrarBtnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/registrarTxtCelular"
+            android:layout_marginTop="28dp"
+            android:text="Registrar" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

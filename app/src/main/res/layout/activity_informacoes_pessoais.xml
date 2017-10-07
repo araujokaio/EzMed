@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ezmed.ezmed.InformacoesPessoaisActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/informacoesPessoaisTxtPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Peso"
+            android:inputType="numberDecimal"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/informacoesPessoaisTxtDataNascimento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/informacoesPessoaisTxtPeso"
+            android:layout_alignStart="@+id/informacoesPessoaisTxtPeso"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Data de Nascimento"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/informacoesPessoaisTxtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/informacoesPessoaisTxtDataNascimento"
+            android:layout_alignStart="@+id/informacoesPessoaisTxtDataNascimento"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Nome Completo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/informacoesPessoaisTxtAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/informacoesPessoaisTxtPeso"
+            android:layout_below="@+id/informacoesPessoaisTxtPeso"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:hint="Altura"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/informacoesPessoaisBtnAvancar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-35dp"
+            android:layout_marginRight="-35dp"
+            android:text="Avançar"
+            android:layout_marginEnd="17dp"
+            android:layout_alignBaseline="@+id/informacoesPessoaisBtnSair"
+            android:layout_alignBottom="@+id/informacoesPessoaisBtnSair"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/informacoesPessoaisBtnSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Sair"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

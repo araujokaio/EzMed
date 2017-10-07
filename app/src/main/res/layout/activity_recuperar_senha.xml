@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ezmed.ezmed.RecuperarSenhaActivity">
+
+    <RelativeLayout
+        android:layout_width="384dp"
+        android:layout_height="511dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <EditText
+            android:id="@+id/recuperarSenhaTxtEmailSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="E-mail ou Usuário"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/recuperarSenhaBtnRecuperarSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recuperarSenhaTxtEmailSenha"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="87dp"
+            android:text="Recuperar Senha" />
+
+        <TextView
+            android:id="@+id/recuperarSenhaTxtVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/recuperarSenhaTxtEmailSenha"
+            android:autoLink="web"
+            android:onClick="clickVoltar"
+            android:text="Voltar"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <TextView
+            android:id="@+id/recuperarSenhaTxtLimpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/recuperarSenhaTxtEmailSenha"
+            android:autoLink="web"
+            android:onClick="clickLimpar"
+            android:text="Limpar"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logoezmed"
+            android:scaleType="fitCenter"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:adjustViewBounds="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
