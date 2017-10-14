@@ -25,15 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<com.ezmed.dto.Alerta> generateData()
     {
-        ArrayList<com.ezmed.dto.Alerta> lista = new ArrayList<>();
+        ArrayList<com.ezmed.dto.Alerta> listaAlarmes = new ArrayList<>();
 
-        lista.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
-        lista.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
-        lista.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
-        lista.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
-        lista.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
-        lista.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
+        listaAlarmes.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
+        listaAlarmes.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
+        listaAlarmes.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
+        listaAlarmes.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
+        listaAlarmes.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
+        listaAlarmes.add(com.ezmed.util.Ferramentas.gerarAlertaRandomico());
 
-        return lista;
+        return listaAlarmes;
     }
 }
