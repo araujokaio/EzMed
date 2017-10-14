@@ -3,11 +3,11 @@ package com.ezmed.ezmed;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class CriarAlerta extends AppCompatActivity {
+public class CriarPacienteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_criar_alerta);
+        setContentView(R.layout.activity_criar_paciente);
     }
 }

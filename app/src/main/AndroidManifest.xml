@@ -22,7 +22,10 @@
         <activity android:name=".RecuperarSenhaActivity" />
         <activity android:name=".InformacoesPessoaisActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".CriarAlerta"></activity>
+        <activity android:name=".CriarAlertaActivity" />
+        <activity android:name=".CriarCuidadorActivity" />
+        <activity android:name=".CriarTratamentoActivity" />
+        <activity android:name=".CriarPacienteActivity"></activity>
     </application>
 
 </manifest>
