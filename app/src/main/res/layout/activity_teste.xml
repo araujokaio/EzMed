@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ezmed.ezmed.teste.TesteActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/testeBtnCriarAlerta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="C. Ale."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/testeBtnCriarCuidador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="C. Cui."
+        app:layout_constraintLeft_toRightOf="@+id/testeBtnCriarAlerta"
+        app:layout_constraintRight_toLeftOf="@+id/testeBtnCriarMedicamento"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/testeBtnCriarMedicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:text="C. Med."
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/testeBtnCriarPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="C. Pac."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testeBtnCriarAlerta" />
+
+    <Button
+        android:id="@+id/testeBtnCriarTratamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="C. Tra."
+        app:layout_constraintLeft_toRightOf="@+id/testeBtnCriarPaciente"
+        app:layout_constraintRight_toLeftOf="@+id/testeBtnGerenciarCuidador"
+        app:layout_constraintTop_toBottomOf="@+id/testeBtnCriarCuidador" />
+
+    <Button
+        android:id="@+id/testeBtnGerenciarCuidador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="G. Cui."
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testeBtnCriarMedicamento" />
+
+    <Button
+        android:id="@+id/testeBtnGerenciarMedicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="G. Med."
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testeBtnCriarPaciente" />
+
+    <Button
+        android:id="@+id/testeBtnGerenciarPaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="G. Pac."
+        app:layout_constraintLeft_toRightOf="@+id/testeBtnGerenciarMedicamento"
+        app:layout_constraintRight_toLeftOf="@+id/testeBtnGerenciarTratamento"
+        app:layout_constraintTop_toBottomOf="@+id/testeBtnCriarTratamento" />
+
+    <Button
+        android:id="@+id/testeBtnGerenciarTratamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="G. Tra."
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testeBtnGerenciarCuidador" />
+
+    <Button
+        android:id="@+id/testeBtnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testeBtnGerenciarMedicamento" />
+
+    <Button
+        android:id="@+id/testeBtnMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Main"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintLeft_toRightOf="@+id/testeBtnLogin"
+        app:layout_constraintRight_toLeftOf="@+id/testeBtnRecuperarSenha"
+        app:layout_constraintTop_toBottomOf="@+id/testeBtnGerenciarPaciente" />
+
+    <Button
+        android:id="@+id/testeBtnRecuperarSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:text="R. Sen."
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testeBtnGerenciarTratamento" />
+
+    <Button
+        android:id="@+id/testeBtnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Registrar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testeBtnMain" />
+</android.support.constraint.ConstraintLayout>
