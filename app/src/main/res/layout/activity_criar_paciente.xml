@@ -4,43 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ezmed.ezmed.CriarPacienteActivity">
+    tools:context="com.ezmed.ezmed.criacao.CriarPacienteActivity">
 
     <EditText
         android:id="@+id/criarPacienteTxtNome"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="25dp"
         android:ems="10"
         android:hint="Nome Completo do Paciente"
         android:inputType="textPersonName"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <EditText
         android:id="@+id/criarPacienteTxtDataNascimento"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="33dp"
         android:ems="10"
         android:hint="Data de Nascimento do Paciente"
         android:inputType="date"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         app:layout_constraintTop_toBottomOf="@+id/criarPacienteTxtNome"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <EditText
         android:id="@+id/criarPacienteTxtPeso"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="Peso em Kilos do Paciente"
         android:inputType="numberDecimal"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         app:layout_constraintTop_toBottomOf="@+id/criarPacienteTxtDataNascimento"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <EditText
         android:id="@+id/criarPacienteTxtAltura"
@@ -52,15 +61,21 @@
         android:inputType="numberDecimal"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         app:layout_constraintTop_toBottomOf="@+id/criarPacienteTxtPeso"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/criarPacienteBtnCriarAtualizar"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="32dp"
         android:text="Criar/Atualizar Paciente!"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintTop_toBottomOf="@+id/criarPacienteTxtAltura"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/criarPacienteTxtAltura" />
 </android.support.constraint.ConstraintLayout>

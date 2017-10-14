@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ezmed.ezmed.CriarCuidadorActivity">
+    tools:context="com.ezmed.ezmed.criacao.CriarCuidadorActivity">
 
     <EditText
         android:id="@+id/criarCuidadorTxtNome"
@@ -16,7 +16,10 @@
         android:inputType="textPersonName"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <EditText
         android:id="@+id/criarCuidadorTxtNumeroCelular"
@@ -28,7 +31,10 @@
         android:inputType="phone"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         app:layout_constraintTop_toBottomOf="@+id/criarCuidadorTxtNome"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <EditText
         android:id="@+id/criarCuidadorTxtEmail"
@@ -40,7 +46,10 @@
         android:inputType="textEmailAddress"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         app:layout_constraintTop_toBottomOf="@+id/criarCuidadorTxtNumeroCelular"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <EditText
         android:id="@+id/criarCuidadorTxtObservacao"
@@ -52,15 +61,21 @@
         android:inputType="text"
         android:textAppearance="@android:style/TextAppearance.Material.Large"
         app:layout_constraintTop_toBottomOf="@+id/criarCuidadorTxtEmail"
-        tools:layout_editor_absoluteX="8dp" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/gerenciarCuidadorBtnCriar"
+        android:id="@+id/gerenciarCuidadorBtnCriarAtualizar"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="32dp"
         android:text="Criar/Atualizar Cuidador!"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintTop_toBottomOf="@+id/criarCuidadorTxtObservacao"
-        tools:layout_editor_absoluteX="8dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/criarCuidadorTxtObservacao" />
 </android.support.constraint.ConstraintLayout>

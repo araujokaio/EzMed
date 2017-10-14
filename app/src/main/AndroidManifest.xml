@@ -20,12 +20,16 @@
             android:name=".RegistrarActivity"
             android:label="@string/app_name" />
         <activity android:name=".RecuperarSenhaActivity" />
-        <activity android:name=".InformacoesPessoaisActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".CriarAlertaActivity" />
-        <activity android:name=".CriarCuidadorActivity" />
-        <activity android:name=".CriarTratamentoActivity" />
-        <activity android:name=".CriarPacienteActivity"></activity>
+        <activity android:name=".criacao.CriarAlertaActivity" />
+        <activity android:name=".criacao.CriarCuidadorActivity" />
+        <activity android:name=".criacao.CriarTratamentoActivity" />
+        <activity android:name=".criacao.CriarPacienteActivity" />
+        <activity android:name=".criacao.CriarMedicamentoActivity" />
+        <activity android:name=".gerenciamento.GerenciarCuidadorActivity" />
+        <activity android:name=".gerenciamento.GerenciarMedicamentoActivity" />
+        <activity android:name=".gerenciamento.GerenciarPacienteActivity" />
+        <activity android:name=".gerenciamento.GerenciarTratamentoActivity"></activity>
     </application>
 
 </manifest>

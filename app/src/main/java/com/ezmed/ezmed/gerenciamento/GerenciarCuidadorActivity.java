@@ -1,13 +1,15 @@
-package com.ezmed.ezmed;
+package com.ezmed.ezmed.gerenciamento;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class CriarTratamentoActivity extends AppCompatActivity {
+import com.ezmed.ezmed.R;
+
+public class GerenciarCuidadorActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_criar_tratamento);
+        setContentView(R.layout.activity_gerenciar_cuidador);
     }
 }
