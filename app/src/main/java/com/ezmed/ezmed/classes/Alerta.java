@@ -3,7 +3,7 @@ package com.ezmed.ezmed.classes;
 import java.io.Serializable;
 
 /**
- * Created by Monster on 19/10/2017....
+ * Created by Monster on 19/10/2017.
  */
 
 
