@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_criar"
+          android:title="- Criação -"/>
+
+    <item android:id="@+id/nav_criar_cuidador"
+          android:icon="@drawable/medical_doctor_specialist"
+          android:title="Cuidador"/>
+
+    <item android:id="@+id/nav_criar_paciente"
+          android:icon="@drawable/person_with_broken_arm"
+          android:title="Paciente"/>
+
+    <item android:id="@+id/nav_criar_tratamento"
+          android:icon="@drawable/medical_notes_symbol_of_a_list_paper_on_a_clipboard"
+          android:title="Tratamento"/>
+
+    <item android:id="@+id/nav_criar_medicamento"
+          android:icon="@drawable/medicine_capsules"
+          android:title="Medicamento"/>
+
+    <item android:id="@+id/nav_gerenciar"
+          android:title="- Gerenciamento -"/>
+
+    <item android:id="@+id/nav_gerenciar_cuidador"
+          android:icon="@drawable/medical_doctor_specialist"
+          android:title="Cuidador"/>
+
+    <item android:id="@+id/nav_gerenciar_paciente"
+          android:icon="@drawable/person_with_broken_arm"
+          android:title="Paciente"/>
+
+    <item android:id="@+id/nav_gerenciar_tratamento"
+          android:icon="@drawable/medical_notes_symbol_of_a_list_paper_on_a_clipboard"
+          android:title="Tratamento"/>
+
+    <item android:id="@+id/nav_gerenciar_medicamento"
+          android:icon="@drawable/medicine_capsules"
+          android:title="Medicamento"/>
+
+    <item android:id="@+id/nav_Extras"
+          android:title="- Extras -"/>
+
+    <item android:id="@+id/nav_farmacia"
+          android:title="Farmácias"/>
+
+    <item android:id="@+id/nav_historico"
+          android:title="Histórico"/>
+
+    <item android:id="@+id/nav_configuracao"
+          android:title="Configuração"/>
+
+</menu>
