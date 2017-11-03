@@ -1,4 +1,4 @@
-package com.ezmed.ezmed.teste;
+package com.ezmed.teste;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,21 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.ezmed.ezmed.LoginActivity;
-import com.ezmed.ezmed.MainActivity;
+import com.ezmed.LoginActivity;
+import com.ezmed.MainActivity;
+import com.ezmed.criacao.*;
+import com.ezmed.gerenciamento.*;
 import com.ezmed.ezmed.R;
-import com.ezmed.ezmed.RecuperarSenhaActivity;
-import com.ezmed.ezmed.RegistrarActivity;
-import com.ezmed.ezmed.core.Login;
-import com.ezmed.ezmed.criacao.CriarAlertaActivity;
-import com.ezmed.ezmed.criacao.CriarCuidadorActivity;
-import com.ezmed.ezmed.criacao.CriarMedicamentoActivity;
-import com.ezmed.ezmed.criacao.CriarPacienteActivity;
-import com.ezmed.ezmed.criacao.CriarTratamentoActivity;
-import com.ezmed.ezmed.gerenciamento.GerenciarCuidadorActivity;
-import com.ezmed.ezmed.gerenciamento.GerenciarMedicamentoActivity;
-import com.ezmed.ezmed.gerenciamento.GerenciarPacienteActivity;
-import com.ezmed.ezmed.gerenciamento.GerenciarTratamentoActivity;
+import com.ezmed.RecuperarSenhaActivity;
+import com.ezmed.RegistrarActivity;
+
 
 public class TesteActivity extends AppCompatActivity
 {

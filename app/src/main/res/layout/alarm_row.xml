@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp"
     >
 
     <TextView
-        android:id="@+id/alaram_nome_remedio"
+        android:id="@+id/alarme_nome_tratamento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:paddingLeft="5dp"
-        android:textColor="@color/colorPrimary">
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:text="Nome Tratamento">
     </TextView>
 
     <TextView
-        android:id="@+id/alarm_horario_remedio"
+        android:id="@+id/alarme_nome_remedio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/alaram_nome_remedio"
-        android:textSize="12sp"
-        android:paddingLeft="5dp"
         android:textColor="@color/colorPrimary"
-        >
+        android:textSize="20dp"
+        android:text="Nome Remedio">
     </TextView>
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/alarme_horario_remedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:text="Horario Remedio">
+    </TextView>
+
+</LinearLayout>

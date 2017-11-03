@@ -1,4 +1,4 @@
-package com.ezmed.ezmed.gerenciamento;
+package com.ezmed.gerenciamento;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

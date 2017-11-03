@@ -1,4 +1,4 @@
-package com.ezmed.ezmed.core;
+package com.ezmed.core;
 
 public class Login {
 

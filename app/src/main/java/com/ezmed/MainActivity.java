@@ -1,4 +1,4 @@
-package com.ezmed.ezmed;
+package com.ezmed;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
@@ -7,22 +7,24 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListView;
 
 import com.ezmed.ezmed.R;
-import com.ezmed.ezmed.criacao.CriarCuidadorActivity;
-import com.ezmed.ezmed.criacao.CriarMedicamentoActivity;
-import com.ezmed.ezmed.criacao.CriarPacienteActivity;
-import com.ezmed.ezmed.criacao.CriarTratamentoActivity;
-import com.ezmed.ezmed.gerenciamento.GerenciarCuidadorActivity;
-import com.ezmed.ezmed.gerenciamento.GerenciarMedicamentoActivity;
-import com.ezmed.ezmed.gerenciamento.GerenciarPacienteActivity;
-import com.ezmed.ezmed.gerenciamento.GerenciarTratamentoActivity;
-import com.ezmed.util.MeuAdapter;
+import com.ezmed.adapters.AlertaAdapter;
+import com.ezmed.criacao.CriarCuidadorActivity;
+import com.ezmed.criacao.CriarMedicamentoActivity;
+import com.ezmed.criacao.CriarPacienteActivity;
+import com.ezmed.criacao.CriarTratamentoActivity;
+import com.ezmed.gerenciamento.GerenciarCuidadorActivity;
+import com.ezmed.gerenciamento.GerenciarMedicamentoActivity;
+import com.ezmed.gerenciamento.GerenciarPacienteActivity;
+import com.ezmed.gerenciamento.GerenciarTratamentoActivity;
+import com.ezmed.util.Mensagem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,11 +33,42 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle toggle;
     private Intent i;
     private Toolbar toolbar;
+    private ListView lvAlarmes;
+    private List<com.ezmed.dto.Alerta> listaAlarmes;
+    AlertaAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        createSideBar();
+
+        lvAlarmes = (ListView) findViewById(R.id.mainLvAlarme);
+
+        listaAlarmes = generateData();
+
+        adapter = new AlertaAdapter(getApplicationContext(), listaAlarmes);
+        lvAlarmes.setAdapter(adapter);
+
+        /*lvAlarmes.setOnClickListener((View v) ->
+        {
+            Mensagem.exibirToastLongo(getApplicationContext(), "Alarme clicado!");
+        });*/
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        if(toggle.onOptionsItemSelected(item))
+            return true;
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void createSideBar()
+    {
+        navigationView = (NavigationView) findViewById(R.id.navView);
 
         toolbar = (Toolbar) findViewById(R.id.nav_action);
         setSupportActionBar(toolbar);
@@ -48,24 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        navigationView = (NavigationView) findViewById(R.id.navView);
-
         setButtonActionMenu();
-
-        MeuAdapter adapter = new MeuAdapter(this, generateData());
-
-        ListView lv = (ListView) findViewById(R.id.mainLvAlarme);
-
-        lv.setAdapter(adapter);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
-        if(toggle.onOptionsItemSelected(item))
-            return true;
-
-        return super.onOptionsItemSelected(item);
     }
 
     private void setButtonActionMenu()

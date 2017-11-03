@@ -1,11 +1,12 @@
-package com.ezmed.ezmed;
+package com.ezmed;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.ezmed.ezmed.R;
 
 import static com.ezmed.util.Mensagem.exibirToastCurto;
 
